@@ -1,0 +1,62 @@
+Your final project for this course requires you to use your knowledge of HTML, CSS and JS to build a single-page site that you will be able to include in your portfolio. Often when applying for jobs and internships you will be asked to share a completed project that you built and to speak about the work you did on that project. This assignment will be one that you can include in your portfolio. (You can view some single-page sites on the awwwards siteLinks to an external site.).
+
+The site can be for a real or fictional company or person. Depending on the type of job you hope to find after graduation, you may want to choose a subject that will illustrate the kind of work you can do. If you'd like to work in-house, building a site for a company could be the way to go. It can save time to choose an existing company, as they generally have established branding and content to pull from.
+
+The Requirements
+There will be two parts to this assignment:
+
+Your coded site, to include semantic HTML, appropriate CSS (your site is not required to be responsive), and JS. ALL of the code written for this page must be written from scratch by you. Please see and review the academic integrity policy for more information. First, you'll have some required elements:
+
+The site will be a single page that displays properly styled at 1280px wide (fixed).
+
+The page should look like a real, stand-alone website. Users should see all of the kind of content that they would expect from any professional website. No placeholder text is allowed, text and photos should be realistic and high-quality, and everything you'd expect to see should be present (header, navigation (even within the page), footer, etc.
+
+Include a control and the proper functionality to allow the user to choose whether to display your site in light or dark modeLinks to an external site.. Some careful planning when choosing the colors and style for your site can make this very easy to implement. Watch a video demonstrating the light/dark mode functionalityLinks to an external site.
+
+A contact form. This should have at least these inputs:
+full name (or first and last name separately)
+phone number
+email address
+comments
+a radio set that allows the user to choose whether they'd like to be contacted by phone or email.
+The name(s) and comments should be required, and the choice of how the user would like to be contacted should require either the phone or email (depending on what the user chose). The form should validate the required fields on submit (using regex, at least for the email and phone) and it should use the valid user info to create an object (customer) when the form is valid and submitted. Errors in the form should display to the user next to the input with the error and should be descriptive and noticeable. When the form is complete and submitted properly, the form should reset and display a message to the user thanking them for their submission, with the info they submitted, pulled from the object you created.
+ALL of your files, including any JS, HTML or CSS should be well organized, properly indented, well-commented, and appropriate (in terms of content and layout).
+
+Your HTML and CSS should validate without errors or warnings.
+When viewing your site in the browser, no errors should be visible in the console.
+Add the async or defer attribute to your script tag in the header to prevent errors on page load with the JS.
+Your JS should "use strict"; globally
+You may upload your files to be hosted online publicly as long as you obfuscate the JS file before uploading itLinks to an external site. (do not obfuscate the JS file you submit for grading)
+Watch a video of general requirements on YouTubeLinks to an external site.
+These elements are required for the project/code as well, but you only have to choose to either include the product display and guessing game OR the cost calculator. The cost calculator is more difficult to implement, so you can choose to only add that feature to your site or you can choose instead to add the product display AND the guessing game
+
+Product Display - This would be a section of your page that allows the user to view some of the available products or services this company offers one at a time, by clicking on a control that includes the product name. Each "product" must include a name, image, and short description (at least a sentence or two) that is displayed when chosen. One product will display by default on page load, and only one product should ever display on screen at a time. (Module 4 - Event Handling & The DOM) - Watch a video demonstrating a product displayLinks to an external site. MUST ALSO INCLUDE THE GAME PLAY ON YOUR SITE IF YOU CHOOSE THE PRODUCT DISPLAY FEATURE
+Game Play - This section will most likely make sense as a sort of "contest" for the user. There will be an input where the user enters a number between 1 and 10. You will generate a random number that you display to the screen (with that the user guessed), and either declare them a winner (their guess matches the random number) or ask them to try again (their guess does not match the random number). You don't have to actually do anything when they "win" except say that they won. (Module 6 - Math Object, Module 4 - Event Handling & The DOM, Module 2 - Conditionals, possibly also M5 for validation) - Watch a video demonstrating the game playLinks to an external site. MUST ALSO INCLUDE THE PRODUCT DISPLAY ON YOUR SITE IF YOU CHOOSE THE GAME PLAY FEATURE
+Cost Calculator - This would be a section of your page that displays a collection of top products, probably for "quick order" or something similar. Each product would include an image, price and name, and some control that the user can click on to add that product to their total. The total/tax/shipping will display in the "total" area of the section, and the total cost should display the current product total, tax and/or shipping, and total price with tax on change (every time the control for a product is clicked, the total should update). Include a button allowing the user to "check out" that when clicked will clear the cart, display the total cost of the items that were in the cart, and thank the user for their order. If the cart is empty when the user. clicks to checkout, they should see a message asking them to add something to the cart before they check out. (Module 4 - Event Handling & The DOM, Module 1 - Arithmetic,  Module 3 - Arrays) - Watch a video demonstrating the cost calculator/shopping cartLinks to an external site.
+A planned/prepared BehanceLinks to an external site. project that explains your process. This should include these details:
+Project requirements
+What the requirements inspired you to create
+An explanation of the goals/purpose/users of the site
+The steps you took when building the site (include any mockups or wireframes or brainstorming documents - wireframes will be required, mockups are optional). These should include: discovery/goals/content gathering, design, writing the code, testing the site design and code, final look/functionality
+The tools you used, sources of images and other assets (include these in code comments too to be safe)
+Explanation of the next steps you would take and/or what you would do to add to or change the site with more time, what you struggled with, what you enjoyed the most, etc.
+PLEASE DO NOT INCLUDE SCREENSHOTS OF YOUR JS IN THIS PROJECT
+You can find more information about talking about your process as a developer hereLinks to an external site. (and a recording of this presentation on YouTubeLinks to an external site.). As well as the a recording of the AIGA Poly Behance WorkshopLinks to an external site., and the slides used in that workshopLinks to an external site.. Some students are more comfortable creating their presentation in Google Slides and embedding that presentation in Behance, which is fine. The point is more to get you in the habit of talking about your process and adding things to your portfolio. The more detail and the better the design and code, the more you'll have to share with interviewers when you graduate!
+Tips for Success
+START EARLY! The sooner you start to think about this assignment, the easier it will be to build. Determining the site's subject/company is a big step, and so is gathering content. Take a few small steps every week, and decide how you can best show off your skills.
+
+ASK FOR HELP IF YOU NEED IT! If you realize that you aren't sure how to implement some part of the site, just ask. I am here to help and I want to see everyone finish the course with an interactive site that shows off what you've learned in this class and in the rest of the program. If you're struggling or if you need some tips once you decide what to build, I will help.
+
+DO SOME RESEARCH! This could be research into interviewing and sharing your portfolio as a designer/developer, or research into how to best design your presentation for the most impact, or even research into how to build a site with good SEO or how to build a site that meets your user's goals. This is a 400-level course, so you probably have built up some of this knowledge in your other courses, but it's always a good idea to ensure that you're up-to-date on the latest research related to building sites for the web.
+
+ 
+
+This project gives you a chance to show off all that you've learned and it can be a lot of fun to see how far you've come since entering the program. Students who complete the course have enjoyed building this site and seeing how what you've learned about HTML and CSS can work with what you now know about JS. Have fun with it!
+
+ 
+
+SUBMISSION:
+1. Your single HTML file, single CSS file, and single (readable) JS file for your site, all coded from scratch by you, in a well organized project folder (compressed) along with all of the assets used on your site. 
+
+2. A link to your Behance Project.
+

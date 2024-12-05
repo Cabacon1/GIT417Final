@@ -5,41 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Wunderlust Travel</title>
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script src="index.js"></script>
 </head>
 
 <body>
+    <a id="skip" href="#main-content">Skip to Main Content</a>
     <header>
         <h1>Poppy and Crumb</h1>
-        <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
+<!-- Navigation -->
+        <nav id="nav">
+            <ul id="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a>Products</a></li>
                 <li><a>About</a></li>
                 <li><a>Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <!-- Main -->
+        <section id="main-content">
             <h2>Hello Cookie Lovers</h2>
+            <p>Small town cookie lover turned Luxury cookie designer.</p>
         </section>
+        <!-- Products -->
         <section id="product">
-            <h3>Products anns Services</h3>
+            <h3>Products and Services</h3>
         </section>
+        <!-- Contact Us -->
         <section id="contact">
-            <h4></h4>
+            <h4>Contact Us</h4>
+            <!-- Form  -->
             <form>
-                
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <!-- submit -->
+                <input type="submit" name="mySubmit" id="mySubmit" value="submit">
             </form>
-
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <p>Copyright &copy; 2021 Wunderlust Travel</p>
+        <a href="#">Privacy Statement</a>
+        <a href="#">Terms of Service</a>
+        <!-- social links -->
+         <ul>
+            <li><a>Facebook</a></li>
+            <li><a>Instagram</a></li>
+            <li><a>Tik Tok</a></li>
+         </ul>
+         
+    </footer>
 </body>
 
 </html>
