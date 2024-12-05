@@ -96,8 +96,20 @@ h2{
 	justify-self: center;
 	padding: 20px;
 }
+h3 {
+	font-size: 2.5rem;
+	align-items: center;
+	justify-self: center;
+	padding: 20px;
+}
+h4{
+	font-size: 2rem;
+	align-items: center;
+	justify-self: center;
+	padding: 10px;
+}
 
-
+/* Header */
 header {
 	display: grid;
 	background-color: var(--blue);
@@ -116,6 +128,7 @@ header > img{
 	font-size: 3rem;
 }
 
+/* Navigation */
 nav{
 	align-content: center;
 
@@ -170,6 +183,7 @@ nav a {
 
 #main-content > h2{
 	grid-area: b;
+	font-weight: 600;
 }
 
 #main-content > p{
@@ -177,7 +191,9 @@ nav a {
 	width: 70%;
 	font-size: 2rem;
 	align-self: center;
-	padding-left: 20px;
+	padding: 50px;
+	background-color: white;
+	border-radius: 20px;
 	
 }
 
@@ -186,6 +202,40 @@ nav a {
 	width: 70%;
 	justify-self: center;
 	padding: 10px;
+	border: 1rem solid;
+	border-color: var(--orange);
+	border-radius: 50%;
 }
 
+/* Products */
 
+#product {
+	align-self: center;
+	justify-content: center;
+	margin: auto;
+}
+
+#product-list{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.pCard {
+	padding: 20px;
+	align-items: center;
+	justify-items: center;
+}
+
+.cardimg {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.price{
+	font-size: 1.5rem;
+	padding-bottom: 5px;
+}
