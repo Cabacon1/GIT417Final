@@ -53,10 +53,18 @@ table {
 
 :root {
     font-size: 16px;
-    --blue:#bde5eb;
-    --black:#000;
-    --white:#FFFFFF;
-    --orange:#EBC3A7;
+    --primary-color:#bde5eb;
+    --text-color:#000;
+    --base-color:#FFFFFF;
+    --accent-color:#EBC3A7;
+}
+/* Darkmode */
+.darkmode{
+	--primary-color:#121212;
+    --text-color:#FFFFFF;
+    --base-color:#000000;
+    --accent-color:#EBC3A7;
+
 }
 
 #skip {
@@ -85,7 +93,7 @@ table {
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	color: var(--black);
+	color: var(--text-color);
 	line-height: 1.35;
 	font-family: "Parkinsans", sans-serif;;
 	padding: 0;
@@ -112,7 +120,7 @@ h4{
 /* Header */
 header {
 	display: grid;
-	background-color: var(--blue);
+	background-color: var(--primary-color);
 	grid-template-columns: 40% 60%;
 	height: 130;
 }
@@ -149,7 +157,7 @@ nav a {
 	display: flex;
 	margin: auto;
 	text-decoration: none;
-	color: #000;
+	color: var(--text-color);
 }
 
 /* Main */
@@ -160,7 +168,7 @@ nav a {
 			"b b b b"
 			"d d c c";
 	gap: 1rem;
-	background-color: var(--blue);
+	background-color: var(--primary-color);
 	padding-bottom: 30px;
 }
 
@@ -192,7 +200,7 @@ nav a {
 	font-size: 2rem;
 	align-self: center;
 	padding: 50px;
-	background-color: white;
+	background-color: var(--base-color);
 	border-radius: 20px;
 	
 }
@@ -203,7 +211,7 @@ nav a {
 	justify-self: center;
 	padding: 10px;
 	border: 1rem solid;
-	border-color: var(--orange);
+	border-color: var(--accent-color);
 	border-radius: 50%;
 }
 
@@ -217,7 +225,7 @@ nav a {
 
 #product-list{
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 	padding-left: 100px;
 	padding-right: 100px;
 }
@@ -241,9 +249,53 @@ nav a {
 }
 
 .shop-item-button {
-	background-color: var(--blue);
+	background-color: var(--primary-color);
+	color: var(--text-color);
 	padding: 5px;
 	border: none;
 	font-weight: 400;
-	
+
 }
+
+/* Cart */
+/* #cart{
+	display: block;
+	justify-self: center;
+	align-self: center;
+}
+
+.btn-purchas {
+	display: block;
+	margin: 50% auto;
+}
+.cart-column {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cart-row {
+    display: flex;
+    align-items: stretch;
+	width: 60vw;
+    justify-content: space-evenly;
+	border-bottom: 1px solid var(--text-color);
+}
+.cart-item{
+	width: 45%;
+}
+.cart-item-title{
+	padding-left: 20px;
+}
+.cart-total{
+	padding: 10px;
+	font-size: large;
+	justify-self: center;
+}
+
+.cart-quantity-input{
+	width: 40px;
+	margin: 10px;
+} */
