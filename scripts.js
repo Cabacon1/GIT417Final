@@ -92,10 +92,10 @@ const reloadCard = () => {
                 <div class ="cardPrice">${value.price.toLocaleString()}</div>
 
                 <div>
-                    <button style="background-color: #bde5eb" 
+                    <button style="background-color: #000" 
                     class="cardButton" onclick = "changeQuantity(${key}, ${value.quantity - 1})"></button>
                     <div class ="count">${count}</div>
-                    <button style="background-color: #bde5eb" 
+                    <button style="background-color: #000" 
                     class="cardButton" onclick = "changeQuantity(${key}, ${value.quantity + 1})"></button>
                 </div>
             `
@@ -107,8 +107,9 @@ const reloadCard = () => {
 }
 
 const changeQuantity = (key, quantity) => {
+
     if(quantity == 0){
-        delete listCards[key]
+        delete listCards[key];
     }else{
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
