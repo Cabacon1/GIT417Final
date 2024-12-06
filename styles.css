@@ -360,3 +360,132 @@ footer a{
 	margin-left: 10px;
 	width: 50px;
 }
+
+
+/* Shopping cart CSS */
+
+.container{
+    width: 1000x;
+    margin: auto;
+    transition: 0.5s;
+	padding-bottom: 100px;
+}
+.container h3{
+    color: var(--text-color);
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+.container .heading .shopping{
+    position: relative;
+    text-align: right;
+}
+
+.shopping i{
+	display: block;
+	position: relative;
+	top: -70px;
+	right: -80px;
+	align-self: center;
+	justify-self: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.shopping i:hover{
+    color: lightpink;
+}
+
+.shopping span{
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    /* top: -5px;
+    left: 80%;
+    padding: 3px 10px; */
+}
+
+.container .list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+	justify-items: center;
+    margin-top: 50px;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: white;
+    border-left: 1px solid white;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .cart{
+    left: calc(100% - 500px)
+}
+.active .container{
+    transform: translateX(-200px);
+}
+
+.cart .h4{
+    color: purple;
+    font-weight: 300;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.cart .checkout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cart .checkOut div{
+    background-color: purple;
+    color: aliceblue;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart .checkOut .div:nth-child(2){
+    background-color: black;
+    color: aliceblue;
+}
+.list .item{
+	text-align: center;
+	width: 30vw;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 50px 50px gray;
+	letter-spacing: 1px;
+	transition: all 0.25s ease;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.list .item img{
+	width: 60%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+}
+.item button{
+	padding: 5px 10px;
+
+}

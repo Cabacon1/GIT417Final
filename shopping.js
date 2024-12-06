@@ -19,31 +19,31 @@ let products = [
     {
         id: 1,
         name: "Standard",
-        images: "/standard.jpg",
+        images: "Images/standard.jpg",
         price: 60
     },
     {
         id: 2,
         name: "Deluxe",
-        images: "/deluxe.jpg",
+        images: "Images/deluxe.jpg",
         price: 72
     },
     {
         id: 3,
         name: "Luxury",
-        images: "/luxury.jpg",
+        images: "Images/luxury.jpg",
         price: 96
     },
     {
         id: 4,
         name: "Mini",
-        images: "/mini.jpg",
+        images: "Images/mini.jpg",
         price: 48
     },
     {
         id: 5,
         name: "Drop Cookies",
-        images: "/dropCookie.jpg",
+        images: "Images/dropCookie.jpg",
         price: 36
     }
 ]
@@ -55,10 +55,10 @@ const initApp = () => {
         let newDiv = document.createElement("div");
         newDiv.classList.add("item");
         newDiv.innerHTML = `
-            <img src ="Images/${value.images}">
+            <img src ="img/${value.images}">
             <div class ="title">${value.name}</div>
             <div class ="price">${value.price.toLocaleString()}</div>
-            <button onclick ="addToCard(${key})">Add To Cart</button>
+            <button onclick="addToCard(${key})">Add To Card</button>
         `
         list.appendChild(newDiv)
     })
