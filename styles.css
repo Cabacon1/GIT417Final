@@ -486,6 +486,48 @@ footer a{
 	object-position: center;
 }
 .item button{
+	background-color: var(--primary-color);
+	border: none;
+	border-radius: 20px ;
 	padding: 5px 10px;
+}
 
+.item button:hover{
+	background-color: var(--accent-color);
+	color: var(--base-color);
+}
+
+.listCard li{
+	display: grid;
+	grid-template-columns:100px repeat(3, 1fr);
+	color: #FFFFFF;
+	row-gap: 10px;
+}
+.listCard li div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.listCard li img{
+	width: 90%;
+}
+.listCard .count {
+	margin: 0px 10px;
+	color: black;
+}
+
+.cardTitle,.cardPrice{
+	color: #000;
+}
+.cardButton{
+	width: 28px;
+	height: 28px;
+	color: #bde5eb;
+	font-size: 1.5rem;
+	font-weight: 500;
+	border-radius:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
