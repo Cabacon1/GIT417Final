@@ -266,12 +266,12 @@ nav a {
 
 } */
 
-/* Contact */
+/* Contact form */
 #contact {
 	display: block;
 	background-color: var(--primary-color);
-	/* width: 800px; */
-	height: 500px;
+	width: 30vw;
+	height: fit-content;
 	justify-self: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -284,14 +284,29 @@ form{
 }
 label{
 	display: block;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding: 20px;
+}
+textarea{
+	display: block;
+	width: 100%;
+	height: 10vh;
 }
 #contact input{
 	display: block;
-	width: 20vw;
+	justify-self: center;
+	width: 100%;
 	padding: 10px;
 }
+
+.radio-group{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+}
+.radio-group > input{
+	display: flex;
+}
+
 #mySubmit{
 	background-color: var(--accent-color);
 	color: var(--text-color);
@@ -300,6 +315,12 @@ label{
 	border: none;
 	padding: 10px;
 }
+#mySubmit:hover{
+	background-color: var(--primary-color);
+	
+}
+
+/* FOOTER */
 
 footer{
 	display: block;

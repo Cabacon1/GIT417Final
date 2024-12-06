@@ -128,12 +128,28 @@
             <h4>Contact Us</h4>
             <!-- Form  -->
             <form>
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName">
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" autocomplete="family-name" required>
+                <label for="fullName">Full Name <span>*</span></label>
+                <input type="text" id="fullName" required>
+                <div class="error" id="nameError"></div>
+
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
+                <div class="error" id="emailError"></div>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone">
+                <div class="error" id="phoneError"></div>
+
+
+                <label for="comments">Comments <span>*</span></label>
+                <textarea id="comments" required></textarea>
+                <div class="error" id="commentsError"></div>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="contactMethod" value="email"> Email</label>
+                    <label><input type="radio" name="contactMethod" value="phone"> Phone</label>
+                </div>
+                <div class="error" id="contactMethodError"></div>
                 <!-- submit -->
                 <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
             </form>

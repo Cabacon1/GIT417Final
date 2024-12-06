@@ -1,3 +1,5 @@
+"use strict";
+
 const openShopping = document.querySelector(".shopping");
 const closeShopping = document.querySelector(".closeShopping");
 const list = document.querySelector(".list");
