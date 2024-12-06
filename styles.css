@@ -198,6 +198,7 @@ nav a {
 	grid-area: c;
 	width: 70%;
 	font-size: 2rem;
+	justify-self: center;
 	align-self: center;
 	padding: 50px;
 	background-color: var(--base-color);
@@ -207,7 +208,10 @@ nav a {
 
 #main-content > #aboutimg {
 	grid-area: d;
-	width: 70%;
+	width: 80%;
+	/* margin: 50px; */
+	/* min-width: 20vw; */
+	align-self: center;
 	justify-self: center;
 	padding: 10px;
 	border: 1rem solid;
@@ -299,3 +303,60 @@ nav a {
 	width: 40px;
 	margin: 10px;
 } */
+
+/* Contact */
+#contact {
+	display: block;
+	background-color: var(--primary-color);
+	/* width: 800px; */
+	height: 500px;
+	justify-self: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+form{
+	display: block;
+	margin: auto 0;
+	justify-items: center;
+}
+label{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#contact input{
+	display: block;
+	width: 20vw;
+	padding: 10px;
+}
+#mySubmit{
+	background-color: var(--accent-color);
+	color: var(--text-color);
+	display: block;
+	margin-top: 5px;
+	border: none;
+	padding: 10px;
+}
+
+footer{
+	display: block;
+	justify-items: center;
+	background-color: var(--primary-color);
+	text-decoration: none;
+	padding-top: 30px;
+}
+footer a{
+	display: block;
+	justify-items: center;
+	text-decoration: none;
+	color:var(--text-color)
+}
+#socialMedia a{
+	display: inline;
+
+}
+#socialMedia img{
+	margin-left: 10px;
+	width: 50px;
+}
