@@ -7,13 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Poppy and Crumb</title>
     <meta name="robots" content="index,follow">
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <script src="scripts.js" async></script>
+    <!-- Fonts -->
     <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap"
+        rel="stylesheet">
+    <!-- JS -->
+    <script src="scripts.js" async></script>
 </head>
 
 <body>
@@ -21,54 +29,55 @@
     <header>
         <h1>Poppy and Crumb</h1>
         <img src="/Images/Logo.PNG">
-<!-- Navigation -->
+        <!-- Navigation -->
         <nav id="nav">
             <ul id="navlist">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#product">Products</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
+
     </header>
     <main>
         <!-- Main -->
         <section id="main-content">
             <div id="carousel">
-                <img id="carousel-image" src="Images/89259526926237527.JPG" alt="Basketball Cookies">
+                <img class="carousel-image" src="Images/89259526926237527.JPG" alt="Basketball Cookies">
+                <img class="carousel-image" src="Images/946009026603619868.JPG" alt="Peter Rabbit Cookies">
+                <img class="carousel-image" src="Images/896400281161390931.JPG" alt="Tangled Cookies">
             </div>
-            <h2>Hello Cookie Lovers</h2>
-            <p>Welcome to Poppy and Crumb. Whether you are hosting a party, corporate event, shower, or other event, cookies are always a great option! I currently serve Norfolk County, Massachusetts and the surrounding areas. I can't wait to help make your special events even sweeter!</p>
+            <h2 id="about">Hello Cookie Lovers</h2>
+            <p>Welcome to Poppy and Crumb. Whether you are hosting a party, corporate event, shower, or other event,
+                cookies are always a great option! I currently serve Norfolk County, Massachusetts and the surrounding
+                areas. I can't wait to help make your special events even sweeter!</p>
             <img id="aboutimg" src="Images/About.JPG">
         </section>
-<!--          Test               -->
+        <!--          Javascript Shopping Cart and Product List               -->
 
-<section class="container">
-    <div id="heading">
-        <h3>Cart</h3>
-        <div class="shopping">
-            <i class="fa-solid fa-bag-shopping"></i>
-            <span class="quantity"></span>
-        </div>
-    </div>
+        <section class="container products">
+            <div id="heading">
+                <h3 id="products">Products</h3>
+                <div class="shopping">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="quantity"></span>
+                </div>
+            </div>
 
-    <div class="list"></div>
-    <div class="cart">
-        <h4>Cart</h4>
-        <ul class="listCard"></ul>
-        <div class="checkOut">
-            <div class="total">0</div>
-            <div class="closeShopping">Close</div>
-        </div>
-    </div>
-</section>
-
-
+            <div class="list"></div>
+            <div class="cart">
+                <h4>Cart</h4>
+                <ul class="listCard"></ul>
+                <div class="checkOut">
+                    <div class="total">0</div>
+                    <div class="closeShopping">Close</div>
+                </div>
+            </div>
+        </section>
 
 
-
-<!-- ------------------------------------------------------------ -->
+        <!-- NONE JAVASCRIPT PRODUCT OFFER------------------------------------------------------------ -->
         <!-- Products -->
         <!-- <section id="product">
             <h3>Products and Services</h3>
@@ -114,36 +123,6 @@
             </div>
         </section> -->
 
-
-
-        <!-- <section id="cart">
-            <h3>CART</h3>
-            <div class="cart-row">
-                <span class="cart-item cart-column">ITEM</span>
-                <span class="cart-price cart-column">PRICE</span>
-                <span class="cart-quantity cart-column">QUANTITY</span>
-            </div>
-            <div class="cart-items">
-                <div class="cart-row">
-                    <div class="cart-item cart-column">
-                        <img class="cart-item-image" src="Images/standard.jpg" width="100" height="100">
-                        <span class="cart-item-title">Standard</span>
-                    </div>
-                    <span class="cart-price cart-column">$60</span>
-                    <div class="cart-quantity cart-column">
-                        <input class="cart-quantity-input" type="number" value="1">
-                        <button class="btn btn-danger" type="button">REMOVE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total: </strong>
-                <span class="cart-total-price">$0</span>
-            </div>
-            <button class="btn btn-primary btn-purchase" id="purchasebtn" type="button">PURCHASE</button>
-        </section> -->
-
-
         <!-- Contact Us -->
         <section id="contact">
             <h4>Contact Us</h4>
@@ -168,11 +147,14 @@
         <!-- social links -->
         <section id="socialMedia">
             <h5>Find Us on Social Media</h5>
-            <a href="#" title="Find us on Facebook"><img src="https://www.public.asu.edu/~jlbarn11/teaching/facebook.png" alt="square Facebook logo"></a>
-            <a href="#" title="View our Instagram account"><img src="https://www.public.asu.edu/~jlbarn11/teaching/instagram.png" alt="instagram camera logo"></a>
-            <a href="#" title="Visit our Pinterest Boards"><img src="https://www.public.asu.edu/~jlbarn11/teaching/pinterest.png" alt="Pinterest logo"></a>
+            <a href="#" title="Find us on Facebook"><img
+                    src="https://www.public.asu.edu/~jlbarn11/teaching/facebook.png" alt="square Facebook logo"></a>
+            <a href="#" title="View our Instagram account"><img
+                    src="https://www.public.asu.edu/~jlbarn11/teaching/instagram.png" alt="instagram camera logo"></a>
+            <a href="#" title="Visit our Pinterest Boards"><img
+                    src="https://www.public.asu.edu/~jlbarn11/teaching/pinterest.png" alt="Pinterest logo"></a>
         </section>
-         
+
     </footer>
 </body>
 

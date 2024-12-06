@@ -9,6 +9,7 @@ const quantity = document.querySelector(".quantity");
 
 openShopping.addEventListener("click", () => {
     body.classList.add("active")
+    body.style.zIndex = 2;
 })
 
 closeShopping.addEventListener("click", () => {
@@ -51,13 +52,13 @@ let products = [
 let listCards = [];
 
 const initApp = () => {
-    products.forEach((value,key) =>{
+    products.forEach((value, key) => {
         let newDiv = document.createElement("div");
         newDiv.classList.add("item");
         newDiv.innerHTML = `
             <img src ="Images/${value.images}">
             <div class ="title">${value.name}</div>
-            <div class ="price">${value.price.toLocaleString()}</div>
+            <div class ="price">$${value.price.toLocaleString()}</div>
             <button onclick ="addToCard(${key})">Add To Cart</button>
         `
         list.appendChild(newDiv)
@@ -67,7 +68,7 @@ initApp()
 
 
 const addToCard = (key) => {
-    if(listCards[key] == null){
+    if (listCards[key] == null) {
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1
     }
@@ -80,16 +81,16 @@ const reloadCard = () => {
     let count = 0;
     let totalPrice = 0;
 
-    listCards.forEach((value,key) => {
+    listCards.forEach((value, key) => {
         totalPrice = totalPrice + value.price;
         count = count + value.quantity;
 
-        if(value != null) {
+        if (value != null) {
             let newDiv = document.createElement("li");
-            newDiv.innerHTML =`
+            newDiv.innerHTML = `
                 <div><img src ="Images/${value.images}"></div>
                 <div class ="cardTitle">${value.name}</div>
-                <div class ="cardPrice">${value.price.toLocaleString()}</div>
+                <div class ="cardPrice">$${value.price.toLocaleString()}</div>
 
                 <div>
                     <button style="background-color: #000" 
@@ -108,12 +109,29 @@ const reloadCard = () => {
 
 const changeQuantity = (key, quantity) => {
 
-    if(quantity == 0){
+    if (quantity == 0) {
         delete listCards[key];
-    }else{
+    } else {
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
     }
-    
+
     reloadCard();
+}
+
+// Carousel
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("carousel-image");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
 }

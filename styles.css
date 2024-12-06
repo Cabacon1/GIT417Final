@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -92,10 +92,9 @@ table {
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
 	color: var(--text-color);
 	line-height: 1.35;
-	font-family: "Parkinsans", sans-serif;;
+	font-family: "Parkinsans", "Noto Serif", sans-serif;;
 	padding: 0;
 }
 h2{
@@ -115,6 +114,9 @@ h4{
 	align-items: center;
 	justify-self: center;
 	padding: 10px;
+}
+p{
+	font-family: "Noto Serif";
 }
 
 /* Header */
@@ -219,9 +221,12 @@ nav a {
 	border-radius: 50%;
 }
 
+.carousel-image{
+	display: none;
+}
 /* Products */
 
-#product {
+/* #product {
 	align-self: center;
 	justify-content: center;
 	margin: auto;
@@ -259,49 +264,6 @@ nav a {
 	border: none;
 	font-weight: 400;
 
-}
-
-/* Cart */
-/* #cart{
-	display: block;
-	justify-self: center;
-	align-self: center;
-}
-
-.btn-purchas {
-	display: block;
-	margin: 50% auto;
-}
-.cart-column {
-    display: flex;
-	justify-content: center;
-    align-items: center;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-.cart-row {
-    display: flex;
-    align-items: stretch;
-	width: 60vw;
-    justify-content: space-evenly;
-	border-bottom: 1px solid var(--text-color);
-}
-.cart-item{
-	width: 45%;
-}
-.cart-item-title{
-	padding-left: 20px;
-}
-.cart-total{
-	padding: 10px;
-	font-size: large;
-	justify-self: center;
-}
-
-.cart-quantity-input{
-	width: 40px;
-	margin: 10px;
 } */
 
 /* Contact */
@@ -381,16 +343,13 @@ footer a{
 }
 
 .shopping i{
-	display: block;
-	position: relative;
-	top: -70px;
-	right: -80px;
-	align-self: center;
+	display: flex;
 	justify-self: center;
     font-size: 2.5rem;
     color: var(--primary-color);
     cursor: pointer;
     transition: all 0.25s ease;
+	z-index: 4;
 }
 
 .shopping i:hover{
@@ -398,16 +357,17 @@ footer a{
 }
 
 .shopping span{
-    background: red;
+    background: var(--accent-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     position: absolute;
-    /* top: -5px;
-    left: 80%;
-    padding: 3px 10px; */
+    top: 22px;
+    left: 90%;
+    padding: 3px 10px;
+	z-index: -1;
 }
 
 .container .list{
@@ -429,14 +389,15 @@ footer a{
     transition: 0.5s;
 }
 .active .cart{
-    left: calc(100% - 500px)
+    left: calc(100% - 500px);
+	z-index: 5;
 }
 .active .container{
     transform: translateX(-200px);
 }
 
 .cart .h4{
-    color: purple;
+    color: var(--primary-color);
     font-weight: 300;
     margin: 0;
     padding: 0 20px;
@@ -453,8 +414,8 @@ footer a{
     grid-template-columns: repeat(2, 1fr);
 }
 .cart .checkOut div{
-    background-color: purple;
-    color: aliceblue;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     width: 100%;
     height: 70px;
     display: flex;
@@ -465,14 +426,14 @@ footer a{
 }
 .cart .checkOut .div:nth-child(2){
     background-color: black;
-    color: aliceblue;
+    color: black;
 }
 .list .item{
 	text-align: center;
 	width: 30vw;
 	background-color: white;
 	padding: 20px;
-	box-shadow: 0 50px 50px gray;
+	box-shadow: 0 20px 50px gray;
 	letter-spacing: 1px;
 	transition: all 0.25s ease;
 	border-radius: 8px;
@@ -480,7 +441,7 @@ footer a{
 }
 
 .list .item img{
-	width: 60%;
+	width: 80%;
 	height: 250px;
 	object-fit: cover;
 	object-position: center;
@@ -489,12 +450,15 @@ footer a{
 	background-color: var(--primary-color);
 	border: none;
 	border-radius: 20px ;
-	padding: 5px 10px;
+	padding: 10px 10px;
 }
 
 .item button:hover{
 	background-color: var(--accent-color);
 	color: var(--base-color);
+}
+div .title{
+	font-size: 2rem;
 }
 
 .listCard li{
