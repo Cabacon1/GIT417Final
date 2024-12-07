@@ -9,7 +9,7 @@
     <meta name="robots" content="index,follow">
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.icon" type="image/x-icon">
     <!-- Fonts -->
     <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +26,7 @@
 
 <body>
     <a id="skip" href="#main-content">Skip to Main Content</a>
+    <!-- <button class="btn-toggle">Toggle Dark-Mode</button> -->
     <header>
         <h1>Poppy and Crumb</h1>
         <img src="/Images/Logo.PNG">
@@ -127,7 +128,7 @@
         <section id="contact">
             <h4>Contact Us</h4>
             <!-- Form  -->
-            <form>
+            <form id="contactForm">
                 <label for="fullName">Full Name <span>*</span></label>
                 <input type="text" id="fullName" required>
                 <div class="error" id="nameError"></div>
