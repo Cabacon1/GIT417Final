@@ -235,7 +235,7 @@ header {
 	display: grid;
 	background-color: var(--primary-color);
 	grid-template-columns: 40% 60%;
-	height: 130;
+	height: 130px;
 }
 
 header>img {
@@ -472,7 +472,7 @@ footer a {
 /* Shopping cart CSS */
 
 .container {
-	width: 1000x;
+	width: 1000px;
 	margin: auto;
 	transition: 0.5s;
 	padding-bottom: 100px;
@@ -576,7 +576,7 @@ footer a {
 }
 
 .cart .checkOut .div:nth-child(2) {
-	background-color: black;
+	/* background-color: ; */
 	color: black;
 }
 
