@@ -472,7 +472,7 @@ footer a {
 /* Shopping cart CSS */
 
 .container {
-	width: 1000px;
+	/* width: 1000px; */
 	margin: auto;
 	transition: 0.5s;
 	padding-bottom: 100px;
